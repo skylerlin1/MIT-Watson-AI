@@ -3,7 +3,7 @@ import re
 import datasets
 import pandas as pd
 
-user_token = "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"
+user_token = ""
 
 conversation_metadata_fields = ['language', 'redacted', 'toxic', 'rate', 'title', 'custom_instruction', 'status',
                                 'redacted']
