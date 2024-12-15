@@ -57,6 +57,7 @@ response_pattern = re.compile(r'(?<!")\b(i am happy to help|my pleasure|you\'re 
 for index, row in df.iterrows():
     modelname = row['model_name']
     conversation = row['conversation']
+    message_prior = ""
     
     for i, message in enumerate(conversation):
         message_content = message['content']
