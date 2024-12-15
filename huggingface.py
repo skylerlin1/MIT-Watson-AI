@@ -80,6 +80,7 @@ filtered_conversations = []
 for index, row in df.iterrows():
     modelname = row['model_name']
     conversation = row['conversation']
+    message_prior = ""
     
     for i, message in enumerate(conversation):
         if message['role'] == 'user':
